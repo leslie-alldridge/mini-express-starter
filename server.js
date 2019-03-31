@@ -202,7 +202,6 @@ server.put('/update/:id', (req, res) => {
   console.log('We received the following ticket information for ticket', req.params.id);
   console.log(req.body);  
   res.json({"message": "success"})
-  
 })
 
 module.exports = server;
