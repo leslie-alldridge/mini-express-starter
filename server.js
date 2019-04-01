@@ -1,4 +1,3 @@
-const path = require("path");
 const express = require("express");
 const bodyParser = require("body-parser");
 const mock = require('./testResponse')
@@ -19,8 +18,6 @@ server.get("/tickets", (req, res) => {
 });
 
 server.put('/update/:id', (req, res) => {
-  console.log('We received the following ticket information for ticket', req.params.id);
-  console.log(req.body);  
   res.json({"message": "success"})
 })
 
